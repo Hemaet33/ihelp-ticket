@@ -1,0 +1,124 @@
+*{margin: 0; padding: 0;}
+body{
+  background-color: rgba(152, 153, 154,0.5);
+}
+.ticket-form{
+  max-width: 80%;
+  overflow-x: auto;
+  margin: auto;
+}
+.ticket-fold{
+  width: 100%;
+  clip-path: polygon(50% 1%, 0% 100%, 100% 100%);
+  background-image: linear-gradient(to top, #fff,#f0eded);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f3f1f1;
+}
+.ticket-fold span{
+ font-style: italic;
+ font-size: 2.85rem;
+ font-weight: bold;
+}
+.ticket-fold span.i{
+ color: #FB0101;
+ margin-right: 10px;
+}
+.ticket-fold span.ticket{
+ color: #98999A;
+}
+.form-group{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,33%);
+  grid-gap: 20px;
+  background-color: #fff;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #fff,#f5f2f2);
+  padding: 50px;
+  box-shadow: -1px 2px 2px rgb(173, 171, 171),-2px 4px 8px rgb(180, 178, 178),1px 0 2px rgb(173, 171, 171),2px 0 8px rgb(180, 178, 178);
+}
+.textarea-gruup{
+  display: flex;
+  flex-direction: column;
+}
+.ticket-form label{
+  display: block;
+  margin-bottom: 10px;
+  color: #333333;
+  font-size: .80rem;
+}
+.input-group{
+  display: grid;
+  margin-right: 40px;
+}
+.ticket-form input, .ticket-form textarea, .ticket-form select{
+  border:1px solid #f3f1f1;
+  box-shadow: -1px 1px 3px rgb(230, 227, 227),-2px 2px 6px rgb(240, 234, 234);
+  padding: 15px;
+}
+.ticket-form input{
+  width: 100%;
+}
+.ticket-form select{
+  width: 115%;
+}
+.ticket-form .textarea-group{
+ grid-area: 6 / 1 / 6 / 4;
+}
+.ticket-form .textarea{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ margin-bottom: 30px;
+}
+.ticket-form .textarea textarea{
+ max-width: 100%;
+}
+.ticket-form input::placeholder, .ticket-form textarea::placeholder{
+ color: #cfcccc;
+ font-size: 14px;
+}
+.ticket-form input:focus, .ticket-form textarea:focus{
+ outline: none;
+}
+
+.ticket-form .create{
+  width: 140px;
+  height: 50px;
+  margin: 50px auto;
+  display: block;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+}
+.ticket-form .create::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f3f1f1;
+  background-color: #eceaea;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: skew(-20deg);
+  border-radius: 5px;
+}
+.ticket-form .create::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0,0.15);
+  box-shadow: 0 0 8px rgba(0, 0, 0);
+  z-index: -2;
+  left: 10px;
+  bottom: 2px;
+}
