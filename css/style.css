@@ -62,7 +62,7 @@ body{
   width: 100%;
 }
 .ticket-form select{
-  width: 115%;
+  width: 110%;
 }
 .ticket-form .textarea-group{
  grid-area: 6 / 1 / 6 / 4;
