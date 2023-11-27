@@ -10,21 +10,26 @@
 <body>
   <!-- Ticket Form -->
   <form action="" method="" class="ticket-form">
-    <div class="ticket-fold"><span class="i">i</span><span class="ticket">Ticket</span></div>
+    <div class="ticket-fold"><div class="i-ticket">
+      <span class="i">i</span><span class="ticket">Ticket</span>
+    </div>
+  </div>
     <div class="form-body">
       <div class="form-group">
-        <div class="input-group">
-          <label for="">Customer Calling Number <span class="required">*</span> </label><input type="text" class="calling-number" placeholder="Customer calling number">
-        </div>
-        <div class="input-group">
-          <label for="">Customer Registration Number <span class="required">*</span> </label><input type="text" class="registration-number" placeholder="Customer registration number">
-        </div>
-        <div class="input-group">
-          <label for="">Customer Name <span class="required">*</span> </label><input type="text" class="name" placeholder="Customer name">
-        </div>
-        <div class="input-group">
-          <label for="">Customer Email <span class="required">*</span> </label><input type="email" class="name" placeholder="Customer email">
-        </div>
+       <h2 class="heading">Customer Details</h2>
+       <div class="input-group">
+        <label for="">Customer Calling Number <span class="required">*</span> </label><input type="text" class="calling-number" placeholder="Customer calling number">
+      </div>
+      <div class="input-group">
+        <label for="">Customer Registration Number <span class="required">*</span> </label><input type="text" class="registration-number" placeholder="Customer registration number">
+      </div>
+      <div class="input-group">
+        <label for="">Customer Name <span class="required">*</span> </label><input type="text" class="name" placeholder="Customer name">
+      </div>
+      <div class="input-group">
+        <label for="">Customer Email <span class="required">*</span> </label><input type="email" class="name" placeholder="Customer email">
+      </div>
+      <h2 class="heading">Product Details</h2>
         <div class="input-group">
           <label for="">Product Type <span class="required">*</span> </label><input type="text" class="type" placeholder="Product type">
         </div>
@@ -34,6 +39,7 @@
         <div class="input-group">
           <label for="">Product Serail No. <span class="required">*</span> </label><input type="text" class="serial-number" placeholder="Product">
         </div>
+        <h2 class="heading">Issue Details</h2>
         <div class="input-group">
           <label for="">Issue Name <span class="required">*</span> </label><select name="" id="select">
             <option>Select one</option>
@@ -67,6 +73,7 @@
             <option>Complain</option>
           </select>
         </div>
+        <h2 class="heading">Assign a person</h2>
         <div class="input-group">
           <label for="">Ticket Category <span class="required">*</span> </label><select name="" id="">
             <option>Select one</option>
@@ -104,8 +111,8 @@
           </div>
         </div>
       </div>
+        <button class="create">Create</button>
     </div>
-    <button class="create">Create</button>
   </form>
   <!-- End Ticket Form -->
 </body>
