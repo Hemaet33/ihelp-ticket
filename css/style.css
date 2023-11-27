@@ -3,11 +3,11 @@
 body{
   background-color: rgba(152, 153, 154,0.5);
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 .form-body{
   padding: 50px;
   background-color: #fff;
+  font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(to bottom, #fff,#f5f2f2);box-shadow: -1px 2px 2px rgb(173, 171, 171),-2px 4px 8px rgb(180, 178, 178),1px 0 2px rgb(173, 171, 171),2px 0 8px rgb(180, 178, 178);
 }
 .ticket-form{
