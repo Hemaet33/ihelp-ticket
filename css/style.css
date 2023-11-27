@@ -1,10 +1,15 @@
 *{margin: 0; padding: 0;}
 body{
   background-color: rgba(152, 153, 154,0.5);
+  box-sizing: border-box;
+}
+.form-body{
+  padding: 50px;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #fff,#f5f2f2);box-shadow: -1px 2px 2px rgb(173, 171, 171),-2px 4px 8px rgb(180, 178, 178),1px 0 2px rgb(173, 171, 171),2px 0 8px rgb(180, 178, 178);
 }
 .ticket-form{
   max-width: 80%;
-  overflow-x: auto;
   margin: auto;
 }
 .ticket-fold{
@@ -31,13 +36,8 @@ body{
 }
 .form-group{
   display: grid;
-  grid-template-columns: repeat(auto-fill,33%);
+  grid-template-columns: repeat(auto-fill,1fr);
   grid-gap: 20px;
-  background-color: #fff;
-  align-items: center;
-  background-image: linear-gradient(to bottom, #fff,#f5f2f2);
-  padding: 50px;
-  box-shadow: -1px 2px 2px rgb(173, 171, 171),-2px 4px 8px rgb(180, 178, 178),1px 0 2px rgb(173, 171, 171),2px 0 8px rgb(180, 178, 178);
 }
 .textarea-gruup{
   display: flex;
@@ -51,21 +51,22 @@ body{
 }
 .input-group{
   display: grid;
-  margin-right: 40px;
+  width: 100%;
 }
 .ticket-form input, .ticket-form textarea, .ticket-form select{
   border:1px solid #f3f1f1;
   box-shadow: -1px 1px 3px rgb(230, 227, 227),-2px 2px 6px rgb(240, 234, 234);
   padding: 15px;
 }
-.ticket-form input{
-  width: 100%;
+.ticket-form .input-group input{
+  /* width: 100%; */
 }
-.ticket-form select{
-  width: 110%;
+.ticket-form .input-group select{
+  /* box-sizing: border-box;
+  width: 100%; */
 }
 .ticket-form .textarea-group{
- grid-area: 6 / 1 / 6 / 4;
+ grid-column: 1/4;
 }
 .ticket-form .textarea{
  width: 100%;
