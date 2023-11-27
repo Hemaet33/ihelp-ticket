@@ -1,21 +1,13 @@
 @media screen and (max-width:920px){
     .form-group{
         display: grid;
-        grid-template-columns: repeat(auto-fill,50%);
+        grid-template-columns: repeat(2,1fr);
         grid-gap: 50px;
       }
-    
+      .ticket-fold span{
+        font-size: 2rem;
+       }
       .ticket-form .textarea-group{
         grid-column: 1/3;
        }
-}
-@media screen and (max-width:992px){
-   .ticket-form label{
-    font-size: .68rem;
-  }
-}
-@media screen and (max-width:878px){
-       .ticket-form select{
-        width: 125%;
-      }
 }
